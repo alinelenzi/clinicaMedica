@@ -1,16 +1,30 @@
 *{
     margin: 0;
     padding: 0;
-}
-body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',sans-serif;
+    box-sizing: border-box;
 }
 main{
     color: #0000008c;
     margin-bottom: 60px;
 }
+#sobre,
+#especialidades,
+#contato{
+    padding: 40px 20px 0;
+}
+
 .topo{
     background-color: #00cad1;
+}
+.topo a{
+    text-decoration: none ;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+.topo a:hover{
+    color: #004b4c;
 }
 .topo .container{
     display: flex;
@@ -21,80 +35,89 @@ main{
     padding: 0 10px;
     margin: 0 auto;
 }
-.topo img{
-    margin-left: 15px;
-}
-.topo nav{
-    margin-left: 15px;
-    padding: 10px;
-}
-.topo a{
-    color: white;
-    text-decoration: none;
-}
-.box-visao-geral{
-    background-image: url(../assets/recepcao.png);
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-}
-.box-visao-geral h1{
-    color: white;
-    align-items: center;
-    font-weight: normal;
-    font-size: 36px;
-    margin-left: 15px;
-    padding-top: 150px;
-}
-.box-conteudo{
-    text-align: center;
-    margin-top: 0 auto;
+
+footer{
+    background-color: #0d6e71;
+    color: #fff;
     padding: 20px;
 }
-
-.box-conteudo p{
-    margin: 20px;
+footer .container{
+    text-align: center;
 }
-.box-sobre-corpo{
+.box-apresentacao{
+    background-image: url('../assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+.box-apresentacao-titulo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    height: 100%;
+}
+.box-apresentacao h1{
+    font-weight: 500;
+    font-size: 38px;
+    margin:0
+}
+.box-texto{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.box-texto h2, h3, p{
+    padding-bottom: 20px;
+}
+.box-texto span{
+    font-weight: bold;
+}
+.box-sobre{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.box-sobre-corpo p{
-    padding: 15px;
+.box-sobre h3{
+    font-weight: 500;
 }
-.container-sobre{
-    margin-left: 30px;
+.box-especialidades{
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.box-especialidades-cards{
+.box-especialidade{
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+.box-especialidade img{
+    width: 100%;
+}
+.box-especialidade figcaption{
+    text-align: center;
+    padding: 10px;
+}
+.box-especialidades-link a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #00cad1;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.box-especialidades-link{
     display: flex;
     align-items: center;
-    gap: 15px;
-}
-.box-especialidades-cards img{
-    width: 300px;
-    height: 250px;
-    margin: 15px 0;
-}
-.box-especialidades a{
-    background-color: #00CED1 ;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    align-items: center;
-}
-#contato{
+    justify-content: center;
+    margin-top: 20px;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
 }
-.box-conteudo span{
-    font-weight: bold;
+.box-especialidades-link a:hover{
+    color: #004b4c
 }
-footer{
-    background-color: #008080;
-    color: white;
-    text-align: center;
-    padding-bottom: 15px;
+.container iframe{
+    width: 100%;
 }
+
